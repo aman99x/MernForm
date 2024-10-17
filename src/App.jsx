@@ -1,17 +1,19 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Admin from './Admin';
-import Form from './Form';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Admin from "./component/Admin";
+import Form from "./component/Form";
 
 function App() {
   return (
     <Router>
       <div>
-        <nav>
+        {/* <nav>
           <Link to="/">Home</Link>
           <Link to="/admin">Admin</Link>
-        </nav>
+        </nav> */}
 
-        <Routes>  {/* Wrap Routes here */}
+        <Routes>
+          {" "}
+          {/* Wrap Routes here */}
           <Route path="/" element={<Form />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>
